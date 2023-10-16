@@ -2,7 +2,7 @@
 
 This repository contains code which can be used to perform the experiments reported in the paper
 
-Romuald A. Janik *Aspects of human memory and Large Language Models*, arXiv:2310.XXXXX
+Romuald A. Janik, *Aspects of human memory and Large Language Models*, arXiv:2310.XXXXX
 
 ## Code organization
  
