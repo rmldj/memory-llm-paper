@@ -16,7 +16,7 @@ and on a model from the pythia family
 ```
 python run_experiments_pythia.py 6.9B experiments1default
 ```
-Due to a different tokenizer only experiments with the `has-a` relationship have been adapted to be run on Pythia models.
+Due to a different tokenizer only experiments with the `has-a` relationship have been adapted to be run on Pythia models. If the output file already exists, the subexperiment is skipped.
 
 `summarize.py` and `errors.py` are diagnostic scripts which we describe at the very end, together with some more information.
 

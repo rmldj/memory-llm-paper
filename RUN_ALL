@@ -1,0 +1,8 @@
+time python run_experiments.py experiments1bis
+time ./RUN_PYTHIA
+time python run_experiments.py experiments2bis
+time python run_experiments.py experiments3tri
+time python run_experiments.py experiments4tri
+time python run_experiments.py experiments6bis
+
+
