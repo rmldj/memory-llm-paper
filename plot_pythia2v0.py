@@ -34,7 +34,7 @@ pos = dict()
 accs = dict()
 
 for pythia_variant in pythia_variants:
-    accsall, _, pos20 = collect_data('has-a', 20, 'pythia-{}'.format(pythia_variant))
+    accsall, _, pos20 = collect_data('has-a', 20, 'pythiav0-{}'.format(pythia_variant))
     pos[pythia_variant] = np.mean(pos20, axis=0)
     accs[pythia_variant] = np.mean(accsall)
 
@@ -65,7 +65,7 @@ plt.legend()
 
 
 
-plt.savefig('fig_pythia2sel.png')
+plt.savefig('fig_pythiav02sel.png')
 
 
 

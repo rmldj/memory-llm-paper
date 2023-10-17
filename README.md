@@ -16,11 +16,19 @@ and on a model from the pythia family
 ```
 python run_experiments_pythia.py 6.9B experiments1default
 ```
-Due to a different tokenizer only experiments with the `has-a` relationship have been adapted to be run on Pythia models. If the output file already exists, the subexperiment is skipped.
+If the output file already exists, the subexperiment is skipped.
 
 `summarize.py` and `errors.py` are diagnostic scripts which we describe at the very end, together with some more information.
 
 In the following we describe the code necessary for reproducing figures from the paper.
+
+## Run all experiments
+
+```
+./RUN_ALL
+```
+This takes about 5 hours on an NVIDIA V100 GPU. Requires 32Gb GPU memory.
+
 
 ## Figures 1, 3 and 4
 
@@ -35,6 +43,12 @@ python plot_glanzer_cunitz.py  # Fig. 1
 python plot_overall23bis.py    # Fig. 3
 python plot_pythia2.py         # Fig. 4
 ```
+The Fig. S1 in the Supplementary information shows the prior `v0` versions of the Pythia models, which exhibit a much more stable recency effect than the updated versions.
+```
+./RUN_PYTHIAv0
+python plot_pythia2v0.py         # Fig. S1
+```
+
 
 ## Figure 5
 

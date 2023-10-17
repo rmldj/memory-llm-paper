@@ -1,0 +1,7 @@
+time python run_experiments.py experiments1default
+
+time python run_experiments_pythiav0.py 70m experiments1default
+time python run_experiments_pythiav0.py 410m experiments1default
+time python run_experiments_pythiav0.py 1.4B experiments1default
+time python run_experiments_pythiav0.py 2.8B experiments1default
+time python run_experiments_pythiav0.py 6.9B experiments1default

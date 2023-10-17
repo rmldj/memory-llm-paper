@@ -11,7 +11,7 @@ DIR = '../results'  #'/storage_0/romuald/PRACA/MEMORY/results/'
 def load(identifier, version='original'):
     if not identifier.endswith('_' + version):
         identifier += '_' + version
-    fname = DIR + identifier + '.npz'
+    fname = DIR + '/' + identifier + '.npz'
     probs = np.load(fname)['probs']
     answers = np.load(fname)['answers']
     return probs, answers
