@@ -92,7 +92,7 @@ memory_has-a_l20_d1_direct_seed0
 total number of queries 3000
 
 ```
-The outputs are written as arrays with names like `memory_has-a_l20_d1_direct_seed555_SUFFIX.npz`, where the `SUFFIX` stands for `original` (meaning GPT-J) or e.g. `pythia-6.9B`.
+The outputs are written as arrays with names like `memory_has-a_l20_d1_direct_seed555_SUFFIX.npz`, where the `SUFFIX` stands for `original` (meaning GPT-J) or e.g. `pythia-6.9B` or `pythiav0-6.9B`.
 
 The arrays contain for each query in the subexperiment the probabilities of each token. One can see the accuracies for each position on the list by writing
 ```
@@ -123,7 +123,7 @@ accuracy at position 18: 0.367
 accuracy at position 19: 0.567
 accuracy at position 20: 0.600
 ```
-The errors made e.g. at position 3 can be read off using
+The errors made e.g. at position 3 (for each of the 30 repetitions appearing in that experiment) can be read off using
 ```
 python errors.py ../results/memory_has-a_l20_d1_direct_seed555_original.npz 3
 memory_has-a_l20_d1_direct_seed555_original.npz
@@ -161,5 +161,5 @@ ERROR 562  Porsche | cat piano car Porsche
       582  dog | dog
 
 ```
-where the top ranking nouns are listed up to the correct answer.
+where the top ranking nouns (at most 10) are listed up to the correct answer. The repetitions are obtained by permuting independently all names and objects and restricting the number of facts to the desired length of the list.
 
