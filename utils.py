@@ -6,7 +6,7 @@ from pythia import pythia
 
 # load results based on identifier
 
-DIR = '../results'  #'/storage_0/romuald/PRACA/MEMORY/results/'
+DIR = '../results'  
 
 def load(identifier, version='original'):
     if not identifier.endswith('_' + version):

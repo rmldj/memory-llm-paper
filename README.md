@@ -1,12 +1,13 @@
 # Memory characteristics of Large Language Models
 
-This repository contains code which can be used to perform the experiments reported in the paper
+This repository contains code which can be used to perform the experiments reported in the paper and generate figures
 
-Romuald A. Janik, *Aspects of human memory and Large Language Models*, arXiv:2310.XXXXX
+Romuald A. Janik, *Aspects of human memory and Large Language Models*, arXiv:2311.XXXXX
+
 
 ## Code organization
  
-`memory.py` contains the key definitions and functions for setting up all the experiments. The files with names like `experiments1default.py` contain definitions of all queries necessary for performing a given experiment. The outputs of all experiments are saved in the directory `DIR` defined in `utils.py`.
+`memory.py` contains the key definitions and functions for setting up all the experiments. The files with names like `experiments1default.py` contain definitions of all queries necessary for performing a given experiment. The outputs of all experiments are saved in the directory `DIR` defined in `utils.py` (default `../results`).
 
 The experiments are ran on GPT-J writing e.g.
 ```
@@ -32,7 +33,7 @@ This takes about 5 hours on an NVIDIA V100 GPU. Requires 32Gb GPU memory.
 
 ## Figures 1, 3 and 4
 
-Run experiments:
+Run experiments (if necessary):
 ```
 python run_experiments.py experiments1bis
 ./RUN_PYTHIA
