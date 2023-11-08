@@ -9,7 +9,7 @@ Romuald A. Janik, *Aspects of human memory and Large Language Models*, arXiv:231
  
 `memory.py` contains the key definitions and functions for setting up all the experiments. The files with names like `experiments1default.py` contain definitions of all queries necessary for performing a given experiment. The outputs of all experiments are saved in the directory `DIR` defined in `utils.py` (default `../results`).
 
-The experiments are ran on GPT-J writing e.g.
+The experiments are run on GPT-J writing e.g.
 ```
 python run_experiments.py experiments1default
 ```
